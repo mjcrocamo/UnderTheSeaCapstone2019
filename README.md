@@ -4,9 +4,9 @@
 
 # Under the Sea: _An Interactive Journey through our Planet's Oceans_
 
-## **2D Game**: _The Great Ocean Clean Up_
+## **2D Game Portion**: _The Great Ocean Clean Up_
 
-- ### Github: https://github.com/mjcrocamo/CapstoneGame
+- ### Github: https://github.com/mjcrocamo/TheGreatOceanCleanUpCapstone2019
 
 ### **Author**: Maggie Crocamo
 
