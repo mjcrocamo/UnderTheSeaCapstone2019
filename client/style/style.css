@@ -1,0 +1,67 @@
+/**
+ * Styles.css file for Under the Sea
+ * Has some raw CSS that isn't present
+ * in useStyles() Material-UI Hooks
+ *
+ * Digital Media Design - Software Engineering Capstone 2019
+ * Under the Sea: An interactive guide to our worlds oceans
+ * @author Maggie Crocamo
+ * {mjcrocamo@gmail.com, mjc494@g.harvard.edu}
+ **/
+
+/* Card Image Details Close Icon Styles */
+.CardImageDetails-closeIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+}
+
+/* Card Image Details Close Icon Styles */
+.CardImageDetails-closeIcon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* NavBar Subtitle Styles */
+.NavBar-subtitle {
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  margin-top: 80px;
+  margin-left: 100px;
+  flex-grow: 1;
+  align-self: flex-start;
+}
+
+/* NavBar Link Styles */
+.NavBar-link:hover {
+  color: #7b99a6;
+}
+
+/* NavBar Title Styles */
+.NavBar-title {
+  flex-grow: 1;
+  align-self: center;
+  padding-left: 5px;
+}
+
+/* NavBar Title Styles */
+.NavBar-title:hover {
+  color: #7b99a6;
+}
+
+/* Game Video Demo Styles */
+.GameVideo {
+  max-width: 900px;
+  height: 560px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* App Background Styles */
+.background {
+  background-color: #273b5c;
+}

@@ -1,0 +1,51 @@
+# **ALM Digital Media Design**: Harvard Capstone Project 2019
+
+# **Project Title**
+
+# Under the Sea: _An Interactive Journey through our Planet's Oceans_
+
+## **2D Game**: _The Great Ocean Clean Up_
+
+- ### Github: https://github.com/mjcrocamo/CapstoneGame
+
+### **Author**: Maggie Crocamo
+
+### **Email**: mjc494@g.harvard.edu, mjcrocamo@gmail.com
+
+# **View Project**
+
+## View in Production
+
+- _Placeholder for production url_
+
+## **Project Goal**
+
+### One of the leading causes of climate change, among other global issues, is lack of conservation of our world’s ocean environments. The goal of this project is to spread knowledge and make change in regards to our world's oceans. It works to expand people's knowledge of ocean life and environments and to get them to take action and help ocean conservation efforts. This is a web application that makes it easy for users to access any other websites about ocean conservation and provides fun ways to learn about ocean life through interactive photos, videos, and games.
+
+## **Project Technologies**
+
+### This project uses a **Node.js** server with **Express**, a **Node.js** web application framework. The API for this web application is built using **GraphQL** (schemas are in Javascript). Using the express-graphql package, the **GraphQL** schema is served up for use by this web application.
+
+### This web application front end is built using **React.js**, A JavaScript library for building user interfaces. In order to query the **GraphQL** API and manage the data retrieved on the front end, the application uses the **Apollo Client**, a complete state management library for JavaScript applications which use **GraphQL**.
+
+### For the 2D Game, **The Great Ocean Clean Up**, the **LOVE2D** Framework was used, a framework for making 2D games in lua.
+
+> ### Below is a list the main technologies used to build this web application.
+>
+> - GraphQL Documentation
+>   GraphQL: A query language for APIs. (n.d.). Retrieved July 21, 2019, from https://graphql.org/
+>
+> - React JS Documentation
+>   React – A JavaScript library for building user interfaces. (n.d.). Retrieved July 21, 2019, from https://reactjs.org/
+>
+> - Apollo Documentation
+>   Introduction. (n.d.). Retrieved July 21, 2019, from https://www.apollographql.com/docs/react/
+>
+> - LOVE2D Documentation
+>   LÖVE. (n.d.). Retrieved July 21, 2019, from https://love2d.org/
+>
+> - Mongoose Documentation
+>   Mongoose v5.7.9: Schemas, https://mongoosejs.com/docs/guide.html.
+>
+> - MongoDB Atlas Documentation
+>   “Managed MongoDB Hosting on AWS, Azure, and GCP.” MongoDB, https://www.mongodb.com/cloud/atlas.
