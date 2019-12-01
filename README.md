@@ -28,8 +28,6 @@
 
 ### This web application front end is built using **React.js**, A JavaScript library for building user interfaces. In order to query the **GraphQL** API and manage the data retrieved on the front end, the application uses the **Apollo Client**, a complete state management library for JavaScript applications which use **GraphQL**.
 
-### For the 2D Game, **The Great Ocean Clean Up**, the **LOVE2D** Framework was used, a framework for making 2D games in lua.
-
 > ### Below is a list the main technologies used to build this web application.
 >
 > - GraphQL Documentation
@@ -41,11 +39,17 @@
 > - Apollo Documentation
 >   Introduction. (n.d.). Retrieved July 21, 2019, from https://www.apollographql.com/docs/react/
 >
-> - LOVE2D Documentation
->   LÖVE. (n.d.). Retrieved July 21, 2019, from https://love2d.org/
->
-> - Mongoose Documentation
+> * Mongoose Documentation
 >   Mongoose v5.7.9: Schemas, https://mongoosejs.com/docs/guide.html.
 >
-> - MongoDB Atlas Documentation
+> * MongoDB Atlas Documentation
 >   “Managed MongoDB Hosting on AWS, Azure, and GCP.” MongoDB, https://www.mongodb.com/cloud/atlas.
+>
+> * Jest and Enzyme Documentation
+>   Jest Js, Jest, https://jestjs.io/
+>
+> * Webpack Documentation
+>   Webpack, Bundle your Assets. (n.d.). Retrieved Dec 1, 2019, from https://webpack.js.org/
+>
+> * Babel Documenation
+>   Babel, The compiler for next generation javascript, (n.d.). Retrieved Dec 1, 2019, from https://babeljs.io/
