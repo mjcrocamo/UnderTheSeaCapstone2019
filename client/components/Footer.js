@@ -75,7 +75,7 @@ const Footer = () => {
             <Box>
               @copyright 2019
               <br />
-              Under the Sea: An Interactive Guide to Our World's Oceans
+              Under the Sea: An Interactive Journey through our Planet's Oceans
               <br />
               Author: Maggie Crocamo
             </Box>

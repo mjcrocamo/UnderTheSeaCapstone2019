@@ -119,7 +119,7 @@ const GameDirections = ({ image, game }) => {
           <Typography color="textPrimary" component="div">
             <Box fontSize={30}>
               MacOSX
-              <Link download href="SuperGame_osx.zip">
+              <Link download href="TheGreatOceanCleanUp-macosx.zip">
                 <GetAppIcon fontSize="large" className={icons.getApp} />
               </Link>
               Windows
