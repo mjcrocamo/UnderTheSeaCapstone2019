@@ -80,6 +80,7 @@ app.use(
 );
 
 if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('../client'));
   app.get('*', function(req, res) {
     res.sendFile(path.resolve(__dirname, '../client/index.html'), function(
       err
