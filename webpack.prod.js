@@ -33,7 +33,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css.mycss.[name].css'
+      filename: 'style.css'
     })
   ]
 });
