@@ -42,7 +42,7 @@ const webpackConfig =
 const MONGO_URI = process.env.MONGO_DB_URL;
 
 if (!MONGO_URI) {
-  throw new Error('You must provide a MongoLab URL');
+  throw new Error('You must provide a MongoLab URI');
 }
 
 /**
