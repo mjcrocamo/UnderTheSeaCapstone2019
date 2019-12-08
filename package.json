@@ -85,6 +85,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "file-loader": "^4.2.0",
     "graphql-playground-middleware-express": "^1.7.12",
+    "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",

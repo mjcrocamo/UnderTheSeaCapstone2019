@@ -22,16 +22,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: process.env.NODE_ENV === 'development',
-              publicPath: '../../'
-            }
-          },
-          'css-loader'
-        ]
+        use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader']
       }
     ]
   },
