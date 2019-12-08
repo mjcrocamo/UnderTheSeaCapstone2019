@@ -84,9 +84,8 @@ if (process.env.NODE_ENV === 'production') {
   app.use('/static', express.static(path.join(__dirname, '../client')));
 
   // Express serve up index.html file if it doesn't recognize route
-  const path = require('path');
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/index.html'));
+    res.sendFile(path.join(__dirname, '../client/index.html'));
   });
 }
 
