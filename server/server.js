@@ -71,7 +71,8 @@ app.use(
 
 if (process.env.NODE_ENV === 'development') {
   app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
-  app.use(webpackMiddleware(webpack(webpackConfig)));
 }
+
+app.use(webpackMiddleware(webpack(webpackConfig)));
 
 module.exports = app;
