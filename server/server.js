@@ -10,6 +10,7 @@
 'use strict';
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const expressGraphQL = require('express-graphql');
 const mongoose = require('mongoose');
 const models = require('./models');
@@ -72,6 +73,7 @@ db.once('open', () => console.log('Connected to MongoLab instance.'));
  * App GraphQL and WebPack Configurations
  */
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use(
   '/graphql',
