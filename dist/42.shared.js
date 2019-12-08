@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[42],{384:function(n,p,o){n.exports=o.p+"angel_fish.png"}}]);

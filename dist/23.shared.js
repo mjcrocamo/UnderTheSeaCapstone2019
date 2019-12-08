@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{378:function(n,p,o){n.exports=o.p+"MarineBio.png"}}]);

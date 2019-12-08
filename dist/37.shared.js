@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{351:function(p,n,o){p.exports=o.p+"main_pufferfish.png"}}]);

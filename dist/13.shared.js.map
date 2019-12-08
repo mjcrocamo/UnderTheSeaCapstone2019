@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./client/components/images/NotFound/NotFound.jpg"],"names":["module","exports"],"mappings":"8EAAAA,EAAOC,QAAU,IAA0B","file":"13.shared.js","sourcesContent":["module.exports = __webpack_public_path__ + \"NotFound.jpg\";"],"sourceRoot":""}

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{379:function(n,o,p){n.exports=p.p+"MarineConservationInstitute.png"}}]);
