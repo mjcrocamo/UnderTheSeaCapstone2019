@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./client/components/images/games/game1.png"],"names":["module","exports"],"mappings":"8EAAAA,EAAOC,QAAU,IAA0B","file":"14.shared.js","sourcesContent":["module.exports = __webpack_public_path__ + \"game1.png\";"],"sourceRoot":""}

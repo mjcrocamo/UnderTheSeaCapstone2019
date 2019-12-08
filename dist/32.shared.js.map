@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./client/components/images/seaAnimalMainPage/main_greate_white_shark.png"],"names":["module","exports"],"mappings":"8EAAAA,EAAOC,QAAU,IAA0B","file":"32.shared.js","sourcesContent":["module.exports = __webpack_public_path__ + \"main_greate_white_shark.png\";"],"sourceRoot":""}
