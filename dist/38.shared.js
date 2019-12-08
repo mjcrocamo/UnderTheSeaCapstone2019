@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{352:function(n,p,o){n.exports=o.p+"main_sea_star.png"}}]);

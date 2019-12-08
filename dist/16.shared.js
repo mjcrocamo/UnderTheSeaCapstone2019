@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{389:function(p,n,o){p.exports=o.p+"game2.png"}}]);
