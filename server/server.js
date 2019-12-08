@@ -77,7 +77,7 @@ app.use(
   '/graphql',
   expressGraphQL({
     schema,
-    graphiql: isDev
+    graphiql: true
   })
 );
 
