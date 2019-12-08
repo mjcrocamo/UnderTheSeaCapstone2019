@@ -19,9 +19,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
-  devServer: {
-    historyApiFallback: true
-  },
   module: {
     rules: [
       {
