@@ -13,18 +13,26 @@ const mongoose = require('mongoose');
 const models = require('./models');
 const bodyParser = require('body-parser');
 const schema = require('./schema/schema');
-const expressPlayground = require('graphql-playground-middleware-express')
-  .default;
 const app = express();
-const webpackMiddleware = require('webpack-dev-middleware');
-const webpack = require('webpack');
-const webpackConfig = require('../webpack.dev.js');
 const dotenv = require('dotenv');
 
 /**
  * Configure environment variables
  */
 dotenv.config();
+
+const expressPlayground =
+  process.env.NODE_ENV === 'development'
+    ? require('graphql-playground-middleware-express').default
+    : null;
+const webpackMiddleware =
+  process.env.NODE_ENV === 'development'
+    ? require('webpack-dev-middleware')
+    : null;
+const webpack =
+  process.env.NODE_ENV === 'development' ? require('webpack') : null;
+const webpackConfig =
+  process.env.NODE_ENV === 'development' ? require('../webpack.dev.js') : null;
 
 /**
  * Declare Mongo URI
@@ -71,8 +79,7 @@ app.use(
 
 if (process.env.NODE_ENV === 'development') {
   app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
+  app.use(webpackMiddleware(webpack(webpackConfig)));
 }
-
-app.use(webpackMiddleware(webpack(webpackConfig)));
 
 module.exports = app;
