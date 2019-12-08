@@ -79,6 +79,18 @@ app.use(
   })
 );
 
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', function(req, res) {
+    res.sendFile(path.resolve(__dirname, '../client/index.html'), function(
+      err
+    ) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    });
+  });
+}
+
 if (process.env.NODE_ENV === 'development') {
   app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
   app.use(webpackMiddleware(webpack(webpackConfig)));
