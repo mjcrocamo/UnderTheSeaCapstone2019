@@ -14,7 +14,7 @@ import { HttpLink } from 'apollo-link-http';
 /**
  * The graph endpoint url
  */
-const endpointURL = process.env.GRAPHQL_URI;
+const endpointURL = `http://localhost:${process.env.PORT}/graphql`;
 
 /**
  * The Apollo Client
