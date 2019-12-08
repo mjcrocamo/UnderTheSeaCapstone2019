@@ -10,6 +10,7 @@
 
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptmizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -21,7 +22,16 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+              publicPath: '../../'
+            }
+          },
+          'css-loader'
+        ]
       }
     ]
   },
@@ -33,7 +43,9 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css'
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false
     })
   ]
 });
