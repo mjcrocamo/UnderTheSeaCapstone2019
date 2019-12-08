@@ -21,6 +21,10 @@ if (process.env.NODE_ENV === 'development') {
   endpointURL = 'https://mysterious-castle-34548.herokuapp.com/graphql';
 }
 
+export const logUrl = () => {
+  console.log(endpointURL);
+};
+
 /**
  * The Apollo Client
  */

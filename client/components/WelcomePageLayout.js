@@ -11,11 +11,13 @@
 import React, { Fragment } from 'react';
 import WelcomeTopics from './WelcomePageTopics';
 import WelcomePageCarouselSection from './WelcomePageCarouselSection';
+import { logUrl } from './UnderTheSeaApolloClient';
 
 /**
  * WelcomePageLayout Component
  */
 const WelcomePageLayout = () => {
+  console.log(logUrl());
   return (
     <Fragment>
       <WelcomePageCarouselSection />
