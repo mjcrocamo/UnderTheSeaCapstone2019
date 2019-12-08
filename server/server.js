@@ -7,6 +7,7 @@
  * {mjcrocamo@gmail.com, mjc494@g.harvard.edu}
  **/
 
+'use strict';
 const express = require('express');
 const expressGraphQL = require('express-graphql');
 const mongoose = require('mongoose');
@@ -40,7 +41,7 @@ const webpackConfig =
 const MONGO_URI = process.env.MONGO_DB_URL;
 
 if (!MONGO_URI) {
-  throw new Error('You must provide a MongoLab URI');
+  throw new Error('You must provide a MongoLab URL');
 }
 
 /**
