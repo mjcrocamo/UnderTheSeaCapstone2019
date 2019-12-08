@@ -14,7 +14,12 @@ import { HttpLink } from 'apollo-link-http';
 /**
  * The graph endpoint url
  */
-const endpointURL = `http://localhost:${process.env.PORT}/graphql`;
+let endpointURL = '';
+if (process.env.NODE_ENV === 'development') {
+  endpointURL = `http://localhost:${process.env.PORT}/graphql`;
+} else {
+  endpointURL = 'https://mysterious-castle-34548.herokuapp.com/graphql';
+}
 
 /**
  * The Apollo Client

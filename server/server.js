@@ -23,18 +23,20 @@ const dotenv = require('dotenv');
  */
 dotenv.config();
 
-const expressPlayground =
-  process.env.NODE_ENV === 'development'
-    ? require('graphql-playground-middleware-express').default
-    : null;
-const webpackMiddleware =
-  process.env.NODE_ENV === 'development'
-    ? require('webpack-dev-middleware')
-    : null;
-const webpack =
-  process.env.NODE_ENV === 'development' ? require('webpack') : null;
-const webpackConfig =
-  process.env.NODE_ENV === 'development' ? require('../webpack.dev.js') : null;
+/**
+ * Whether this is a dev environment
+ */
+const isDev = process.env.NODE_ENV === 'development';
+
+/**
+ * Define constants for dev environment
+ */
+const expressPlayground = isDev
+  ? require('graphql-playground-middleware-express').default
+  : null;
+const webpackMiddleware = isDev ? require('webpack-dev-middleware') : null;
+const webpack = isDev ? require('webpack') : null;
+const webpackConfig = isDev ? require('../webpack.dev.js') : null;
 
 /**
  * Declare Mongo URI
@@ -75,7 +77,7 @@ app.use(
   '/graphql',
   expressGraphQL({
     schema,
-    graphiql: process.env.NODE_ENV === 'development'
+    graphiql: isDev
   })
 );
 
@@ -89,7 +91,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-if (process.env.NODE_ENV === 'development') {
+if (isDev) {
   app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
   app.use(webpackMiddleware(webpack(webpackConfig)));
 }
