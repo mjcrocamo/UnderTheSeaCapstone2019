@@ -18,15 +18,36 @@
 
 - https://oceansbeneaththesurface.herokuapp.com/
 
+## **Project Overview**
+
+This project is a web application that provides fun ways to learn about ocean life through interactive photos, videos, and games. It also makes it easy for users to access any other websites about ocean conservation in one place. It is comprised of the website and a 2D game called: The Great Ocean Clean Up.
+
 ## **Project Goal**
 
-### One of the leading causes of climate change, among other global issues, is lack of conservation of our world’s ocean environments. The goal of this project is to spread knowledge and make change in regards to our world's oceans. It works to expand people's knowledge of ocean life and environments and to get them to take action and help ocean conservation efforts. This is a web application that makes it easy for users to access any other websites about ocean conservation and provides fun ways to learn about ocean life through interactive photos, videos, and games.
+The lack of conservation and protection of our world’s ocean environments has been contributing to issues such as climate change, among many others. The goal of this project is to spread knowledge about ocean life and ocean conservation among its users in fun and interactive ways.
+
+## **Problems it Tries to Solve**
+
+The lack of conservation and protection of our world’s ocean environments has been contributing to issues such as climate change, but in order to help, who wants to browse the internet to read through a bunch of hefty articles or find which organizations are actually helping?
+
+Here is where Under the Sea solves that problem. It provides an interactive web experience to learn about ocean life. It lists ocean conservation organizations and summaries of their main goals, to make it easier than ever to make a difference quickly.
 
 ## **Project Technologies**
 
-### This project uses a **Node.js** server with **Express**, a **Node.js** web application framework. The API for this web application is built using **GraphQL** (schemas are in Javascript). Using the express-graphql package, the **GraphQL** schema is served up for use by this web application.
+- Node.js with Express
+- Express-GraphQL
+- Apollo-Client
+- GraphQL
+- React JS
+- MongoDB
+- Webpack
+- Babel
+- Material UI
+- Jest & Enzyme
 
-### This web application front end is built using **React.js**, A JavaScript library for building user interfaces. In order to query the **GraphQL** API and manage the data retrieved on the front end, the application uses the **Apollo Client**, a complete state management library for JavaScript applications which use **GraphQL**.
+This project uses a **Node.js** server with **Express**, a **Node.js** web application framework. The API for this web application is built using **GraphQL** (schemas are in Javascript). Using the express-graphql package, the **GraphQL** schema is served up for use by this web application.
+
+This web application front end is built using **React.js**, A JavaScript library for building user interfaces. In order to query the **GraphQL** API and manage the data retrieved on the front end, the application uses the **Apollo Client**, a complete state management library for JavaScript applications which use **GraphQL**.
 
 > ### Below is a list the main technologies used to build this web application.
 >
