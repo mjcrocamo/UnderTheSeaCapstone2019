@@ -94,14 +94,14 @@ const App = () => {
     () =>
       createMuiTheme({
         palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
+          type: 'dark',
           primary: { main: '#7b99a6' },
           secondary: {
             main: '#ffffff'
           }
         }
       }),
-    [prefersDarkMode]
+    [true]
   );
   return (
     <ErrorBoundary>
