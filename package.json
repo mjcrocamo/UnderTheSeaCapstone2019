@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --env.GRAPHQL_ENDPOINT=undertheseagraphql --config webpack.dev.js",
+    "build": "webpack --config webpack.dev.js",
     "start": "nodemon index.js",
     "dev": "nodemon index.js --ignore client"
   },

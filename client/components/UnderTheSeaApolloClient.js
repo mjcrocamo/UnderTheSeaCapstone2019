@@ -18,7 +18,7 @@ let endpointURL = '';
 if (process.env.PORT) {
   endpointURL = `http://localhost:${process.env.PORT}/${process.env.GRAPHQL_ENDPOINT}`;
 } else {
-  endpointURL = `https://mysterious-castle-34548.herokuapp.com/${process.env.GRAPHQL_ENDPOINT}`;
+  endpointURL = `https://mysterious-castle-34548.herokuapp.com/undertheseagraphql`;
 }
 
 /**
