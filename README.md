@@ -6,7 +6,7 @@
 
 ## \*_2D Game_: _The Great Ocean Clean Up_
 
-- ### Github: https://github.com/mjcrocamo/TheGreatOceanCleanUpCapstone2019
+- Github: https://github.com/mjcrocamo/TheGreatOceanCleanUpCapstone2019
 
 **Author**: Maggie Crocamo
 
