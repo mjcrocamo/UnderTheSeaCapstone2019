@@ -89,7 +89,6 @@ const appRoutes = [
  */
 const App = () => {
   const classes = useAppStyles();
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const theme = useMemo(
     () =>
       createMuiTheme({

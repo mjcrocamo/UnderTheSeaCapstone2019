@@ -194,6 +194,14 @@ export const useNavBarStyles = makeStyles(theme => ({
       display: 'none'
     }
   },
+  title: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 40
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 40
+    }
+  },
   links: {
     display: 'block',
     [theme.breakpoints.down('xs')]: {
