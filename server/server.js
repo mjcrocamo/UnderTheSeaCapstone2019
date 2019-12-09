@@ -10,7 +10,6 @@
 'use strict';
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
 const expressGraphQL = require('express-graphql');
 const mongoose = require('mongoose');
 const models = require('./models');
@@ -73,10 +72,9 @@ db.once('open', () => console.log('Connected to MongoLab instance.'));
  * App GraphQL and WebPack Configurations
  */
 app.use(bodyParser.json());
-app.use(cors());
 
 app.use(
-  '/graphql',
+  `/${process.env.GRAPHQL_ENDPOINT}`,
   expressGraphQL({
     schema,
     graphiql: isDev
@@ -94,7 +92,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 if (isDev) {
-  app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
+  app.get(
+    '/playground',
+    expressPlayground({ endpoint: `/${process.env.GRAPHQL_ENDPOINT}` })
+  );
   app.use(webpackMiddleware(webpack(webpackConfig)));
 }
 
