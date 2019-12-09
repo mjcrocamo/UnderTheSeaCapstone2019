@@ -306,7 +306,8 @@ export const useSeaAnimalDetailsStyles = makeStyles(theme => ({
     maxWidth: 810
   },
   link: {
-    color: '#b0c9d4'
+    color: '#b0c9d4',
+    paddingBottom: 30
   }
 }));
 
