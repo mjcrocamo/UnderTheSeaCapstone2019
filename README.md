@@ -4,7 +4,7 @@
 
 # Under the Sea: _An Interactive Journey through our Planet's Oceans_
 
-## \*_2D Game_: _The Great Ocean Clean Up_
+## 2D Game: _The Great Ocean Clean Up_
 
 - Github: https://github.com/mjcrocamo/TheGreatOceanCleanUpCapstone2019
 
@@ -47,8 +47,8 @@ This project uses a **Node.js** server with **Express**, a **Node.js** web appli
 
 This web application front end is built using **React.js**, A JavaScript library for building user interfaces. In order to query the **GraphQL** API and manage the data retrieved on the front end, the application uses the **Apollo Client**, a complete state management library for JavaScript applications which use **GraphQL**.
 
-> ### Below is a list the main technologies used to build this web application.
->
+### **Below is a list the main technologies used to build this web application.**
+
 > - GraphQL Documentation
 >   GraphQL: A query language for APIs. (n.d.). Retrieved July 21, 2019, from https://graphql.org/
 >
