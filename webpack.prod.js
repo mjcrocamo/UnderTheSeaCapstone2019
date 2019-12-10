@@ -10,7 +10,6 @@
 
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptmizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -30,7 +29,17 @@ module.exports = merge(common, {
     splitChunks: {
       chunks: 'all'
     },
-    minimizer: [new UglifyJsPlugin(), new OptmizeCssAssetPlugin()]
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+      new OptmizeCssAssetPlugin({
+        cssProcessorOptions: { discardComments: { removeAll: true } },
+        canPrint: true
+      })
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
