@@ -15,6 +15,7 @@ const mongoose = require('mongoose');
 const models = require('./models');
 const bodyParser = require('body-parser');
 const schema = require('./schema/schema');
+const cors = require('cors');
 const app = express();
 const dotenv = require('dotenv');
 
@@ -72,6 +73,7 @@ db.once('open', () => console.log('Connected to MongoLab instance.'));
  * App GraphQL and WebPack Configurations
  */
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use(
   `/${process.env.GRAPHQL_ENDPOINT}`,
